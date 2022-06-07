@@ -44,6 +44,15 @@ To create the recommended base environment after installing Anaconda, run:
  conda create -n rtohack python==3.9
  ```
 
+### Recommended Packages
+------------
+
+For python users, some recommended packages can be found in requirements.txt and installed via:
+
+
+    pip install -r requirements.txt
+    pip install -r {{ your_project.repo_name }}/requirements.txt
+
 
 ### Project Structure
 ------------
@@ -128,13 +137,3 @@ Winners will be selected from those that pass the First-Pass Qualification round
 
 ##### Most Creative
 [DJI Tello Drone](https://www.walmart.com/ip/DJI-Tello-Quadcopter-Beginner-Drone-VR-HD-Video/710672516) (one per team member)
-
-
-### Recommended Packages
-------------
-
-For python users, some recommended packages can be found in requirements.txt and installed via:
-
-
-    pip install -r requirements.txt
-    pip install -r {{ your_project.repo_name }}/requirements.txt
