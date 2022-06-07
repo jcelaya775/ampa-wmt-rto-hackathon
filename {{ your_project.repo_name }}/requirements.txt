@@ -1,6 +1,20 @@
 # local package
 -e .
 
+# recommended packages
+numpy
+scipy
+pandas
+scikit-learn
+plotly
+jupyter
+geopy
+# osmnx - https://osmnx.readthedocs.io/en/stable/#installation
+dash
+torch
+torchvision
+torchaudio
+
 # external requirements
 click
 Sphinx

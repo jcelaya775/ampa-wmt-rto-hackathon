@@ -1,6 +1,10 @@
 Generating the docs
 ----------
 
+** Note **: Generating documentation like this is purely optional. You can use whatever documentation style you'd like (including deleting this folder and using a README only).
+
+Modify the contents of your mkdocs.yml.
+
 Install requirements:
 
     pip install -r requirements.txt
