@@ -11,6 +11,12 @@ _This template is to help get participants started in working with the data for 
  - Organizer: Aishwarya Srikanth (aishwarya.srikanth@walmart.com)
  - Data Owner: Tom Kremer (tom.kremer@americanpetsalive.org)
 
+### Rules at a Glance
+
+ - Maximum Team Size: 5
+ - Days to Complete: 2.5
+ - TODO ...
+
 ### License and Legal
 
 
@@ -85,7 +91,44 @@ The structure here is only a starting point. You may make whatever changes you d
 
 ## Judging Criteria
 
-TODO: ...
+Judging is performed in 2 phases.
+
+ - First-Pass Qualification
+ - Winner Selection
+
+#### First-Pass Qualification
+
+Because of the large number of submissions, first-pass qualification will be performed by all judges on the submitted github repositories (forked or cloned from this repo). The README.md in the root of the repo will be observed by judges to look for the following basic criteria:
+
+ - Challenge Category Selection (i.e. Data Science, Software, Innovation)
+ - Problem Statement (i.e. a description of the problem the team decided to address)
+ - Solution Description (i.e. a description of what you did)
+ - Working Demo (i.e. something you can show)
+ - Visuals/Screenshots (i.e. illustrating what you did - can be in place of a demo if needed)
+ - List of Tools and Technology Used
+
+If one of the above is missing, your solution will not make it to the next round of judging. Minor exceptions will be made in cases when demos, visuals, or tool lists are deemed non-relevant to the solution proposal.
+
+Bonus factors which will be considered which may make up for deficits in the above are:
+ - Interestingness of visuals
+ - Novelty of problem statement/solution
+ - Interestingness of tool usage
+
+See [SAMPLE_SUBMISSION_README.md](SAMPLE_SUBMISSION_README.md) for an example of a submission readme.
+
+#### Winner Selection
+
+Winners will be selected from those that pass the First-Pass Qualification round. The following prizes and award winner categories will be available:
+
+##### Best Overall
+[Oculus Quest 2](https://www.walmart.com/ip/Meta-Quest-2-Oculus-Advanced-All-In-One-Virtual-Reality-Headset-128GB/723227733?athbdg=L1100) (one per team member)
+ 
+##### Most Usable
+[MP Cadet 3D Printer](https://www.walmart.com/ip/Monoprice-MP-Cadet-3D-Printer-Full-Auto-Leveling-Print-Via-Wi-Fi-Great-for-Children-for-Educational-Purposes-at-Home-Office-Dorm-or-Classroom/581284729) (one per team member)
+
+##### Most Creative
+[DJI Tello Drone](https://www.walmart.com/ip/DJI-Tello-Quadcopter-Beginner-Drone-VR-HD-Video/710672516) (one per team member)
+
 
 ### Recommended Packages
 ------------
