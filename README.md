@@ -1,25 +1,24 @@
 # AmPA/WMT RTO Hackathon Project Template
 
-_This template is to help get participants started in working with the data for the American Pets Alive!, Walmart, Return to Owner Hackathon._
+_This repository template is to help get participants started in working with the data for the American Pets Alive!, Walmart, Return to Owner Hackathon._
 
 
-#### [:TODO: External References](www.google.com)
+#### [Walmart Careers](https://careers.walmart.com/) | [American Pets Alive!](https://americanpetsalive.org/)
 
 ### Key Contacts
+-----------
  - Technical Lead: Kevin Horecka (kevin.horecka@walmart.com)
  - Organizer: Desmond Thomas (desmond.thomas@walmart.com)
  - Organizer: Aishwarya Srikanth (aishwarya.srikanth@walmart.com)
  - Data Owner: Tom Kremer (tom.kremer@americanpetsalive.org)
 
 ### Rules at a Glance
-
+-----------
  - Maximum Team Size: 5
  - Days to Complete: 2.5
- - TODO ...
 
 ### License and Legal
-
-
+-----------
 [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC_BY--NC--ND_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
 
  Data related to this work is licensed under a [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](http://creativecommons.org/licenses/by-nc-nd/4.0/).
@@ -30,7 +29,7 @@ _This template is to help get participants started in working with the data for 
 
 
 ### Problem Statements
-
+-----------
 See [APA RTO Hackathon 2022.docx](APA%20RTO%20Hackathon%202022.docx) or [APA RTO Hackathon 2022.pdf](APA%20RTO%20Hackathon%202022.pdf) for problem statements and instructions.
 
 ### Recommended Base Environment
