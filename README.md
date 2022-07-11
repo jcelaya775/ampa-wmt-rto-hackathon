@@ -32,6 +32,8 @@ _This repository template is to help get participants started in working with th
 -----------
 See [APA RTO Hackathon 2022.docx](APA%20RTO%20Hackathon%202022.docx) or [APA RTO Hackathon 2022.pdf](APA%20RTO%20Hackathon%202022.pdf) for problem statements and instructions.
 
+If you'd like to jump straight to the data, it can be found [here](https://github.com/austinpetsalive/ampa-wmt-rto-hackathon/blob/master/%7B%7B%20your_project.repo_name%20%7D%7D/src/data/ampa_wmt_rto_hackathon_july-22_data.xlsx).
+
 ### Recommended Base Environment
 -----------
  - [Anaconda Python](https://www.anaconda.com/products/distribution)
