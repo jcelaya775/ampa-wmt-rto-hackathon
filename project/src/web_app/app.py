@@ -4,6 +4,9 @@ from utils.preprocessing_helper import *
 from torchtext.data import Field, Pipeline
 from nltk.tokenize import word_tokenize
 from wordcloud import STOPWORDS
+import folium
+import geopy
+from geopy import Nominatim
 
 import torch
 import pickle
@@ -20,48 +23,6 @@ STATIC_DIR = os.path.abspath("./project/src/web_app/static")
 
 app = Flask(__name__, template_folder=TEMPLATE_DIR, static_folder=STATIC_DIR)
 
-RESULT = None
-
-pre_pipeline = Pipeline(lemmatize)
-pre_pipeline.add_before(preprocessing)
-TEXT = Field(
-    sequential=True,
-    tokenize=word_tokenize,
-    lower=True,
-    stop_words=STOPWORDS,
-    preprocessing=pre_pipeline,
-)
-LABELS = ["Neutral", "Negative", "Positive"]
-VOCAB = {}
-with open("./project/src/web_app/models/vocab.pkl", "rb") as f:
-    VOCAB = pickle.load(f)
-
-best_config = {
-    "hidden_size": 302,
-    "lr": 0.00010769630091763721,
-    "l2": 2.5888680371842294e-05,
-    "nonlin": "tanh",
-    "dropout": 0.1,
-    "num_layers": 2,
-    "mode": 0,
-    "optimizer": "Adam",
-    "momentum": 0.1,
-}
-
-best_model = SeqModel(
-    embedding_size=100,
-    vocab_size=len(VOCAB),
-    output_size=3,
-    hidden_size=best_config["hidden_size"],
-    num_layers=best_config["num_layers"],
-    nonlin=best_config["nonlin"],
-    dropout_rate=best_config["dropout"],
-    mode=best_config["mode"],
-    unit="gru",
-    more_features=False,
-)
-best_model.load_state_dict(torch.load("./project/src/web_app/models/model_deploy.pt"))
-
 
 @app.route("/", methods=["POST", "GET"])
 def index():
@@ -70,22 +31,41 @@ def index():
 
 @app.route("/resultspage", methods=["POST", "GET"])
 def resultspage():
-    tweet = request.form["search"]
-    RESULT = predict_sentiment(best_model, {"tweet": tweet})[0]
-    return render_template("resultspage.html", value=RESULT)
+    address = request.form["search"]
+    address = preprocess(address)
+    
+    prediction = None
+    with open("./project/src/web_app/models/model.pkl", "rb") as f:
+        model = pickle.load(f)
+        prediction = model.predict([[address.latitude, address.longitude]])
+
+    print(type(model))
+    print(model)
+    print(prediction)
+    
+    folium_map = folium.Map(location=[address.latitude, address.longitude], zoom_start=12, tiles="Stamen Terrain")
+
+    tooltip = "Click me!"
+
+    folium.Marker(
+        [address.latitude, address.longitude], popup="<i>Mt. Hood Meadows</i>", tooltip=tooltip
+    ).add_to(folium_map)
+    # folium.Marker(
+    #     [45.3311, -121.7113], popup="<b>Timberline Lodge</b>", tooltip=tooltip
+    # ).add_to(folium_map)
+    return folium_map._repr_html_()
 
 
-def preprocess(tweet):
-    return [VOCAB.get(token, 0) for token in TEXT.preprocess(tweet)]
+def preprocess(address):
+    locator = Nominatim(user_agent="myGeocoder")
+    address = locator.geocode(address)
+    return address
 
 
-def predict_sentiment(model, input_json):
-    tweet = input_json["tweet"]
-    num_input = preprocess(tweet)
-    model_outputs = best_model(torch.LongTensor(num_input).reshape((-1, 1)))
-    probabilities, predicted = torch.max(model_outputs.cpu().data, 1)
-    pred_labels = LABELS[predicted]
-    return pred_labels, probabilities
+# def predicted_val(lst):
+#     predicted1= clf1.predict(lst)
+#     lp=list(predicted1)
+#     return lp 
 
 
 if __name__ == "__main__":
