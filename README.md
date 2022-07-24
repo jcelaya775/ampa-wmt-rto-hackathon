@@ -26,7 +26,7 @@ Our solution includes mapping the radius and location where a astray pet can be 
 ## Demo and Deep-Dive Visuals
 
 Demo Link - https://www.youtube.com/watch?v=u7QdtHDzRbs&t=1s&ab_channel=CarinaYe
-
+Video Link - https://youtu.be/SztTymo9fyE
 
 ## Tools Used
 
