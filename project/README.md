@@ -1,12 +1,16 @@
-{{your_project.project_name}}
+Team Alpha RTO Hackathon DS Project
 ==============================
 
-{{your_project.description}}
+Description:
+
+This project aims to analyze the animal and shelter data provided by the hackathon organizer. We achieved the following ovjectives:
+(1) train and test both supervised and unsupervised models (linear regression, decision tree) to predict animal location
+(2) develop an interactive dashboard to visualize trends in animal behavior and understand city patterns
+
 
 ### Project Structure
 ------------
 
-The structure here is only a starting point. You may make whatever changes you deem appropriate. Your README is _very_ important as it is the first-pass the judges will use to determine if your work should proceed to the next round.
 
 ```
 ├── LICENSE

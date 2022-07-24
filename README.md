@@ -1,140 +1,39 @@
-# AmPA/WMT RTO Hackathon Project Template
+# Find your Pet/Team Alpha
 
-_This repository template is to help get participants started in working with the data for the American Pets Alive!, Walmart, Return to Owner Hackathon._
-
-
-#### [Walmart Careers](https://careers.walmart.com/) | [American Pets Alive!](https://americanpetsalive.org/)
-
-### Key Contacts
------------
- - Technical Lead: Kevin Horecka (kevin.horecka@walmart.com)
- - Organizer: Desmond Thomas (desmond.thomas@walmart.com)
- - Organizer: Aishwarya Srikanth (aishwarya.srikanth@walmart.com)
- - Data Owner: Tom Kremer (tom.kremer@americanpetsalive.org)
-
-### Rules at a Glance
------------
- - Maximum Team Size: 5
- - Days to Complete: 2.5
-
-### License and Legal
------------
-[![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC_BY--NC--ND_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
-
- Data related to this work is licensed under a [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](http://creativecommons.org/licenses/by-nc-nd/4.0/).
-
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-
- Software and/or code related to this work is licensed under a [GNU General Public License version 3](https://opensource.org/licenses/GPL-3.0).
+We developed a solution that helps pet owners predict where they can find their lost pets and a dashboard that helps shelter workers visualize animal travel patterns to optimize operation efficiencies.
 
 
-### Problem Statements
------------
-See [APA RTO Hackathon 2022.docx](APA%20RTO%20Hackathon%202022.docx) or [APA RTO Hackathon 2022.pdf](APA%20RTO%20Hackathon%202022.pdf) for problem statements and instructions.
+## Challenge Category: Data Science
 
-If you'd like to jump straight to the data, it can be found [here](https://github.com/austinpetsalive/ampa-wmt-rto-hackathon/blob/master/%7B%7B%20your_project.repo_name%20%7D%7D/src/data/ampa_wmt_rto_hackathon_july-22_data.xlsx).
+## Team Members
 
-### Recommended Base Environment
------------
- - [Anaconda Python](https://www.anaconda.com/products/distribution)
- - Python 3.9+
- 
-To create the recommended base environment after installing Anaconda, run:
- 
- ```
- conda create -n rtohack python==3.9
- ```
-
-### Recommended Packages
-------------
-
-For python users, some recommended packages can be found in requirements.txt and installed via:
+ * Anjali Tanikella - Data Pre-processing and cleaning
+ * Ishana Shinde - Data Pre-processing and cleaning
+ * Jorge Celaya - Backend coding for Interface
+ * Vishnu Vardhan Reddy Yeruva -  Front end coding for interface
+ * Carina Ye - Data pre-processing and visualization
 
 
-    pip install -r requirements.txt
-    pip install -r {{ your_project.repo_name }}/requirements.txt
+## Problem Statement
+
+All pets , dominantly cats tend to wander out and end up loosing their way back home. in cases like these , we as owners tend to think the worse and panic while searching . in order to be able to find in a systematic was we need to know where to look
+
+## Solution Description
+
+Our solution includes mapping the radius and location where a astray pet can be found was the primary target and we also mapped a user interface using tableau for locating near by shelters and possible locations of finding their pet.
 
 
-### Project Structure
-------------
+## Demo and Deep-Dive Visuals
 
-The structure here is only a starting point. You may make whatever changes you deem appropriate. Your README is _very_ important as it is the first-pass the judges will use to determine if your work should proceed to the next round.
+Demo Link - https://www.youtube.com/watch?v=u7QdtHDzRbs&t=1s&ab_channel=CarinaYe
+Video Link - https://youtu.be/SztTymo9fyE
 
-```
-├── LICENSE
-├── README.md          <- The top-level README for developers using this project.
-├── data
-│   ├── external       <- Data from third party sources.
-│   ├── interim        <- Intermediate data that has been transformed.
-│   ├── processed      <- The final, canonical data sets for modeling.
-│   └── raw            <- The original, immutable data dump.
-│
-├── docs               <- A default Sphinx project; see sphinx-doc.org for details
-│
-├── models             <- Trained and serialized models, model predictions, or model summaries
-│
-├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-│                         the creator's initials, and a short `-` delimited description, e.g.
-│                         `1.0-jqp-initial-data-exploration`.
-│
-├── references         <- Data dictionaries, manuals, and all other explanatory materials.
-│
-├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-│   └── figures        <- Generated graphics and figures to be used in reporting
-│
-├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-│                         generated with `pip freeze > requirements.txt`
-│
-├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
-├── src                <- Source code for use in this project.
-│   ├── __init__.py    <- Makes src a Python module
-│   │
-│   ├── data           <- Scripts to download or generate data
-│   │
-│   ├── features       <- Scripts to turn raw data into features for modeling
-│   │
-│   ├── models         <- Scripts to train models and then use trained models to make
-│   │                     predictions
-│   │
-│   └── visualization  <- Scripts to create exploratory and results oriented visualizations
-```
+## Tools Used
 
-## Judging Criteria
-
-Judging is performed in 2 phases.
-
- - First-Pass Qualification
- - Winner Selection
-
-#### First-Pass Qualification
-
-Because of the large number of submissions, first-pass qualification will be performed by all judges on the submitted github repositories (forked or cloned from this repo). The README.md in the root of the repo will be observed by judges to look for the following basic criteria:
-
- - Challenge Category Selection (i.e. Data Science, Software, Innovation)
- - Problem Statement (i.e. a description of the problem the team decided to address)
- - Solution Description (i.e. a description of what you did)
- - Working Demo (i.e. something you can show)
- - Visuals/Screenshots (i.e. illustrating what you did - can be in place of a demo if needed)
- - List of Tools and Technology Used
-
-If one of the above is missing, your solution will not make it to the next round of judging. Minor exceptions will be made in cases when demos, visuals, or tool lists are deemed non-relevant to the solution proposal.
-
-Bonus factors which will be considered which may make up for deficits in the above are:
- - Interestingness of visuals
- - Novelty of problem statement/solution
- - Interestingness of tool usage
-
-See [SAMPLE_SUBMISSION_README.md](SAMPLE_SUBMISSION_README.md) for an example of a submission readme.
-
-#### Winner Selection
-
-Winners will be selected from those that pass the First-Pass Qualification round. The following prizes and award winner categories will be available:
-
-##### Best Overall
-[Oculus Quest 2](https://www.walmart.com/ip/Meta-Quest-2-Oculus-Advanced-All-In-One-Virtual-Reality-Headset-128GB/723227733?athbdg=L1100) (one per team member)
- 
-##### Most Usable
-[MP Cadet 3D Printer](https://www.walmart.com/ip/Monoprice-MP-Cadet-3D-Printer-Full-Auto-Leveling-Print-Via-Wi-Fi-Great-for-Children-for-Educational-Purposes-at-Home-Office-Dorm-or-Classroom/581284729) (one per team member)
-
-##### Most Creative
-[DJI Tello Drone](https://www.walmart.com/ip/DJI-Tello-Quadcopter-Beginner-Drone-VR-HD-Video/710672516) (one per team member)
+ * Tools used - 
+ * Jupyter notebook - IDE
+ * Visual Studio Code - IDE
+ * Tableau - Data Visualisations
+ * Excel - Storing Data 
+ * Libraries : Pandas , Pickle , Seaborn, Numpy , Matplotlib , Sklearn , Open Street Map ,Folium
+ * Languages : Python , FlaskFramework (HTML, JAVAScript ,Flask with Jinja2 plugin)
