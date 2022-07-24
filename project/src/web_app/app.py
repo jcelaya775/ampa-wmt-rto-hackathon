@@ -43,7 +43,6 @@ def resultspage():
     print(type(model))
     print(prediction)
     print('\n\n\n\n')
-
     
     folium_map = folium.Map(location=[address.latitude, address.longitude], zoom_start=12, tiles="Stamen Terrain")
 
