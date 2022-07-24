@@ -49,6 +49,24 @@ This project aims to analyze the animal and shelter data provided by the hackath
 │   │                     predictions
 │   │
 │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
+│
+├── web-app            <- Contains the files for the web app
+│   └── app.py         <- Main server
+│   └── requirements.txt <- Contains required python modules
+│   └── deployement_model <- AI model for deployment
+│   └── models         <- Contains all of the AI models
+│   └── scripts        <- Frontend scripts
+│   └── scss           <- Sass files
+│   └── static         <- Contains
+|        ├── css       <- Styling
+|        ├── img       <- Images
+|        ├── vendor    <- Libraries
+│   └── templates      <- Frontend files
+│   └── utils          <- Helper functions
+│
+├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
+│                         generated with `pip freeze > requirements.txt`
+
 ```
 
 --------
