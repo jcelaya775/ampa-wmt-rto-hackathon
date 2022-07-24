@@ -16,7 +16,7 @@ We developed a solution that helps pet owners predict where they can find their 
 
 ## Problem Statement
 
-All pets , dominantly cats tend to wander out and end up loosing their way back home. in cases like these , we as owners tend to think the worse and panic while searching in order to be able to find in a systematic was we need to know where to look
+All pets, dominantly cats and dogs tend to wander out and end up losing their way back home. In cases like these, we as owners tend to think the worst and panic while searching in order to be able to find in a systematic way as we need to know where to look.
 
 ## Solution Description
 
