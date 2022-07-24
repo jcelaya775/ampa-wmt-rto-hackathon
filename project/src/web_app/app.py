@@ -1,14 +1,12 @@
 from flask import Flask, render_template, url_for, request, redirect
 from deployment_model.seq_model import SeqModel
 from utils.preprocessing_helper import *
-from torchtext.data import Field, Pipeline
 from nltk.tokenize import word_tokenize
 from wordcloud import STOPWORDS
 import folium
 import geopy
 from geopy import Nominatim
 
-import torch
 import pickle
 import os
 import nltk
