@@ -15,8 +15,8 @@ nltk.download("stopwords")
 nltk.download("punkt")
 
 # sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
-TEMPLATE_DIR = os.path.abspath("./templates")
-STATIC_DIR = os.path.abspath("./static")
+TEMPLATE_DIR = os.path.abspath("./project/src/web_app/templates")
+STATIC_DIR = os.path.abspath("./project/src/web_app/static")
 
 app = Flask(__name__, template_folder=TEMPLATE_DIR, static_folder=STATIC_DIR)
 
@@ -33,7 +33,7 @@ TEXT = Field(
 )
 LABELS = ["Neutral", "Negative", "Positive"]
 VOCAB = {}
-with open("../src/data/data.xlsx", "rb") as f:
+with open("./project/src/web_app/models/vocab.pkl", "rb") as f:
     VOCAB = pickle.load(f)
 
 best_config = {
@@ -60,7 +60,7 @@ best_model = SeqModel(
     unit="gru",
     more_features=False,
 )
-best_model.load_state_dict(torch.load("./models/model_deploy.pt"))
+best_model.load_state_dict(torch.load("./project/src/web_app/models/model_deploy.pt"))
 
 
 @app.route("/", methods=["POST", "GET"])
