@@ -25,8 +25,8 @@ Our solution includes mapping the radius and location where a astray pet can be 
 
 ## Demo and Deep-Dive Visuals
 
-* Demo Link - https://www.youtube.com/watch?v=u7QdtHDzRbs&t=1s&ab_channel=CarinaYe
-* Video Link - https://youtu.be/SztTymo9fyE
+* Dashboard Demo Link - https://www.youtube.com/watch?v=u7QdtHDzRbs&t=1s&ab_channel=CarinaYe
+* Website Demo Link - https://youtu.be/SztTymo9fyE
 * Final Pitch Deck Link - https://docs.google.com/presentation/d/1JLT1Rbp_h0TCwa8sEIJUPSP23aTmcTHK_V2UlmWjYyI/edit?usp=sharing
 * Tableau Dashboard Link - https://public.tableau.com/shared/D82DZHKKY?:display_count=n&:origin=viz_share_link
 
