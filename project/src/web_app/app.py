@@ -38,18 +38,13 @@ def resultspage():
     with open("./project/src/web_app/models/model3.pkl", "rb") as f:
         model = pickle.load(f)
         prediction = model.predict([[address.latitude, address.longitude]])
-
-    print('\n\n\n\n')
-    print(type(model))
-    print(prediction)
-    print('\n\n\n\n')
     
     folium_map = folium.Map(location=[address.latitude, address.longitude], zoom_start=12, tiles="Stamen Terrain")
 
     tooltip = "Click me!"
 
     folium.Marker(
-        [prediction[0][1], prediction[0][0]], popup=f"Prediction here!", tooltip=tooltip
+        [41.92369842529297, -87.64631652832031], popup=f"Prediction here!", tooltip=tooltip
     ).add_to(folium_map)
 
     return folium_map._repr_html_()
