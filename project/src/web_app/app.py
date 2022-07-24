@@ -16,8 +16,8 @@ nltk.download("stopwords")
 nltk.download("punkt")
 
 # sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
-TEMPLATE_DIR = os.path.abspath("./project/src/web_app/templates")
-STATIC_DIR = os.path.abspath("./project/src/web_app/static")
+TEMPLATE_DIR = os.path.abspath("templates")
+STATIC_DIR = os.path.abspath("static")
 
 app = Flask(__name__, template_folder=TEMPLATE_DIR, static_folder=STATIC_DIR)
 
@@ -33,7 +33,7 @@ def resultspage():
     address = preprocess(address)
     
     prediction = None
-    with open("./project/src/web_app/models/model3.pkl", "rb") as f:
+    with open("./models/model3.pkl", "rb") as f:
         model = pickle.load(f)
         prediction = model.predict([[address.latitude, address.longitude]])
     
